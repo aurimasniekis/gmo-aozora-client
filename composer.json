@@ -1,0 +1,49 @@
+{
+  "name": "aurimasniekis/gmo-aozora-client",
+  "description": "A PSR-18/17 based client for accessing your bank information from https://gmo-aozora.com/",
+  "keywords": [
+    "gmo",
+    "aozora",
+    "client"
+  ],
+  "homepage": "https://github.com/aurimasniekis/gmo-aozora-client",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Aurimas Niekis",
+      "email": "aurimas@niekis.lt",
+      "homepage": "https://aurimas.niekis.lt"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/aurimasniekis/gmo-aozora-client",
+    "source": "https://github.com/aurimasniekis/gmo-aozora-client"
+  },
+  "require": {
+    "php": "^7.4||^8.0",
+    "ext-json": "*",
+    "psr/http-client": "^1.0",
+    "psr/http-factory": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "AurimasNiekis\\GmoAozoraClient\\": "src"
+    }
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^2"
+  },
+  "scripts": {
+    "cs-check": "php-cs-fixer fix --dry-run --diff --diff-format udiff",
+    "cs-fix": "php-cs-fixer fix"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0-dev"
+    }
+  },
+  "config": {
+    "sort-packages": true
+  }
+}
